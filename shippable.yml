@@ -1,0 +1,12 @@
+language: python
+python:
+ - 2.7
+env:
+ global:
+  - FOO=bar BAZ=bin
+  - FIZZ=foobar
+install: true
+script:
+ - echo $FOO
+ - echo $BAZ
+ - echo $FIZZ
